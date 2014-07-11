@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Nitesh Bharadwaj</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="js/simplescript.js" type="text/javascript" > </script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Nitesh Bharadwaj<a href="#" class="full-name">_G</a></h1>
+        <div class="slogan">“The fool didn’t know it was impossible, <br /> so he did it.” – Anonymous</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+		  <li class="current"><a href="projects.html">Projects</a></li>
+		  <li><a href="internships.html">Internships</a></li>
+		  <li><a href="misc.html">Miscellaneous</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Resume</h3>
+        Please find my complete resume <a href = "raw/Resume.pdf" target="ng_resume"> here </a>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Ultrasonic Acoustics In Smartphones</h1>
+		<p>Ultrasonics in smartphones essentially refers to utilizing the speaker and the microphone to deal with sound frequencies inaudible to humans (usually > 20 KHz). This project involves a feasibility study followed by a proof of concept to approximately find the distance between two smartphones without using any hardware other than what is already present in today's mobiles. </p>
+		<p>Two methods were implemented, one uses a radio signal (packet on Wi-Fi Direct) and an audio pulse sent concurrently from one mobile and estimating the time difference of arrival (TDOA) of these two signals at the other mobile taking advantage of the inherent speed difference between an electromagnetic and a sound wave. The other method is a sound-only algorithm involving two way communication between the smartphones called Beep-Beep developed by Microsoft Research. This was demonstrated to be feasible at inaudible frequencies without causing any disturbance to the users, thus demonstrating the practicality. </p>
+		<p>This project was carried out under the esteemed guidance of <a href="http://www.cse.iitd.ernet.in/~vinay/">Dr. Vinay Ribeiro </a>, Department of Computer Science, IIT Delhi and was externally funded by Cambridge Silicon Radio</p>
+		<h1>Fuzzy-Logic Based Prediction of Wind Speed</h1> 
+		<p>Wind speed and direction belong to the class of most important but most difficult variables to be able to predict. The wind power plants run at a very low efficiency and if we could predict the wind speed and combine it with a forecast of load, we can drive up this efficiency. This was the motivation behind our project and through the course of semester, we developed a statistical algorithm whose accuracy was comparable to the results of (if not beat) regression and anfis algorithms both in terms of accuracy and calculation speed </p>
+		<p>This project was carried out under the guidance of <a href="http://ee.iitd.ernet.in/people/bkpanigrahi.html">Dr. B.K.Panigrahi</a>, Department of EE, IIT Delhi with my project partner being <a href="https://www.facebook.com/aayushgoel08">Aayush Goel</a>. 
+		<h1>Robotics</h1> 
+		<p>Each year our college would be sending a contingent to the national Robotics extravaganza, Robocon. The following is a <a href ="http://www.youtube.com/embed/m_iEuqgMf1Y">video</a> of our robots performing during the practice for ROBOCON 2013.<iframe width="560" height="315" src="http://www.youtube.com/embed/m_iEuqgMf1Y" frameborder="0" allowfullscreen></iframe> Unfortunately, due to the failure of the driving motors, right before the competition, our performance was badly affected. Nevertheless, I've had the experience to be a part of something big for the first time and I believe I've made a decent contribution in the following aspects:  </p>
+		<h2>Four wheel holonomic drive</h2>
+		<p>A holonomic drive provides omnidirectional movement when compared to other kind of drives. This improves the manoeuvrability of the robot and we could successfully implement this kind of drive in practice with the robot being able to take off in eight different directions compared to the normal two directions of differential drive. </p>
+		<h2>Curve following with constraints</h2>
+		<p>Implemented curve following using light sensors with the constraint being, the sensors have to be placed onto an edge of the robot. This makes things less intuitive but we could implement it successfully </p>
+		<h2>Inertial Measurement Unit (IMU), Optical Mouse based control</h2>
+		<p>Two optical mice were placed at the bottom of the robot separated by a known fixed distance. These were interfaced with arduino and the rate of change of values returned by each mice would give the speed and heading of the robot. </p>
+		<p>simultaneously, another method was implemented to control the heading of the robot based on the magnetometer and accelerometer readings from an IMU</p>
+		<h2>PCB Design and Fabrication</h2>
+		<p>The title says it all. It's an expensive business BTW</p>
+		<h1>Hackathons etc.</h1>
+		<h2>Windows Phone 7 Hackathon 2012</h2>
+		<p>This happened during the rudimentary stages of our learning cycle of programming. Without knowledge of loops and recursion, me and my partner, <a href="http://en.wikipedia.org/wiki/Amitabh_Bachchan">Amitabh</a>, called the 'Illutionists', have visualized and ran the game of 'Connecto' with around 2000 lines of copy-paste code, <i class = 'francaiseee'> parce que, on ne savait pas la boucle 'for'</i>. Albeit, we got a consolation prize for our efforts! </p>                   
+		<img src="pics/microsoft.jpg" alt="some_text">
+		<h2>Yahoo HackU 2012</h2>
+		<p>Made a chrome extension to track the time spent on each website and alert the user if he/she is spending much time on facebook etc. The UI was bad but our intention was good - to fight OCD</p>                   
+		<h2>Tryst 2014</h2>
+		<p>Made an AI bot that can play and try to win 'Ultimate Tic-Tac-Toe' game for a competition with the same name. Adjudged the second best bot in the competition (There weren't many serious competitors though :P)</p>
+	  </div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; <a href="#" class="nick"> Illusionist</a> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Nitesh Bharadwaj</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="js/simplescript.js" type="text/javascript" > </script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Nitesh Bharadwaj<a href="#" class="full-name">_G</a></h1>
+        <div class="slogan">“The fool didn’t know it was impossible, <br /> so he did it.” – Anonymous</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="projects.html">Projects</a></li>
+		  <li class="current"><a href="internships.html">Internships</a></li>
+		  <li><a href="misc.html">Miscellaneous</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		</ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Resume</h3>
+        Please find my complete resume <a href = "raw/Resume.pdf" target="ng_resume"> here </a>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Google Summer of Code 2013 - The Freenet Project</h1>
+		<p>Working for open-source organization, <a href="http://en.wikipedia.org/wiki/Freenet">The Freenet Project </a> which aims to build a decentralized, anonymous and secure alternative to internet while being censorship resistant. This evoled from the idea of freedom of communication. It achieves this by decentralizing the content(freesites - websites over freenet,files,flogs - blogs over freenet etc.) and thus making the source of information irrelevant.</p>
+		<p>An important mode of freenet is darknet where a node only connects to a peer, if either a) the owner of the node knows and trusts the peer or b) if some existing friend or friend of friend or ... knows and trusts this peer. This builds a web of trust  and provides more security when compared to its sister mode - opennet. You can read more about this project and probably contribute to it in your free time if you subscribe to the ideas of free speech, anti-NSA, anti-snooping sentiments etc.</p> 
+		<p>My contribution to the project is to provide an easy and secure way to exchange darknet node-references with trusted peers. This involves publicizing the node on local network by repeated multicast DNS packets (signed) which is received by a previously paired smartphone. The phone receives this packet and authenticates the node based on the SSL certificate presented. Then it downloads the node reference. This can be exchanged with a peer using our android application by Bluetooth, Wi-Fi Direct or NFC</p>
+		<p>Throughout the project, I've received valuable advice from <a href="https://github.com/nextgens">nextgens</a> - my mentor, <a href="http://amphibian.dyndns.org/"> toad_ </a> - the chief developer and a lot of others on IRC.</p>
+		<p>Codebase: <a href="https://github.com/NiteshBharadwaj/fred-staging/tree/Android-App-Merge"> Fred Extension</a>, <a href="https://github.com/NiteshBharadwaj/plugin-MDNSDiscovery-official/tree/master/src"> MDNS Plugin Extension</a>, <a href="https://github.com/NiteshBharadwaj/Freenet"> Android App</a> </p>
+		<p>More Info: <a href="https://emu.freenetproject.org/pipermail/devl/2013-September/037358.html">Final Report</a>,<a href ="http://en.wikipedia.org/wiki/Freenet">The Freenet Project</a>, Official Freenet IRC channel: #freenet on chat.freenode.net </p>
+		<h1>Robert Bosch Engineering and Business Solutions Ltd.</h1>
+		<p>As mentioned in the homepage, this internship involves building a robot that can avoid obstacle, detect a target and pick it up.</p>
+		<p>A raspberry pi along with a USB Wi-Fi adapter is being used for communication. The user communicates with the server using his android application. This command is sent to the robot through the home internet connection. An alternative has also been implemented which involves attaching a GSM module to pi and receiving SMS based commands.</p>
+		<p>The raspberry pi then processes this command and activates its camera module (monocular vision - no depth sensor involved). It captures an image and detects the floor right ahead of it by Noise removal followed by Canny followed by heuristics. Subsequently, it detects the object and plans a path towards it by BFS. It then proceeds towards the object before it is interrupted by next iteration.</p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; <a href="#" class="nick"> Illusionist</a> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
