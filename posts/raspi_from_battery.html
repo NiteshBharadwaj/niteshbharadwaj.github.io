@@ -26,19 +26,19 @@
         <!-- insert the page content here -->
         <h1>Powering up raspberry pi from a battery pack</h1>
 		<p>Usually, we find batteries giving 12 Volts output which needs to be stepped down to 5V or 3.3V for a typical embedded application. The following are the two methods which are equally good for their respective applications: (Although, you can buy <a href="http://www.amazon.in/Keychain-Powerbank-Portable-Micromax-Playstation/dp/B00HFNFKJQ?tag=googinhydr18418-21"> this</a>, a portable battery charger, and be done with it) :</p>
-		<h2>Using a linear voltage regulator – 7805:</h2>
+		<h2>Using a linear voltage regulator - 7805:</h2>
 		<p>The main factor to be considered before using a 7805 is the current rating, i.e., the current that is to be drawn by the load. For a raspberry pi application, it is around 700mA which can go up to 1A or even more depending on the modules connected. The current rating of the TI made 7805 is 1.5A which seems to be okay for this application. But if you are going to connect Wi-Fi Module or Camera Module, you'd be really pushing the circuit to its limits. </p>
 		<img class="content_img_fill" src="../pics/7805.png"></img>
 		<div>The problems with this kind of approach are:
 		<li>Heat: A linear regulator like 7805 just draws the same current from input as drawn by output and dissipates the extra power as heat</li>
-		<li>Efficiency: If my power supply is something like a solar cell, I wouldn’t want to waste any energy as heat</li>
+		<li>Efficiency: If my power supply is something like a solar cell, I wouldn't want to waste any energy as heat</li>
 		<li>Voltage Drop: Increase in current and increase in temperature, both contribute towards voltage drop</li>
 		</div><br />
 		<h2>Switching Mode Power Supply (Buck-Boost)</h2>
-		<p>These basically chop the voltage by switching the input on and off at some frequency (and can also increase the voltage by exploiting the power of an inductor while chopping the supply). These are available at various efficiencies and various current ratings. The one I suggest for RPi is LM2596 from Texas Instruments. It can supply a 3A load i.e. you’d be able to power at least 3 servos whilst powering up a raspberry pi with multiple modules connected</p>
+		<p>These basically chop the voltage by switching the input on and off at some frequency (and can also increase the voltage by exploiting the power of an inductor while chopping the supply). These are available at various efficiencies and various current ratings. The one I suggest for RPi is LM2596 from Texas Instruments. It can supply a 3A load i.e. you'd be able to power at least 3 servos whilst powering up a raspberry pi with multiple modules connected</p>
 		<p>When compared with 78xxs, these are extremely efficient and can save a lot of power. For the same reason, the heat produced is less</p>
 		<img class="content_img_fill" src="../pics/2596.png"></img>
-		<p>Here, 3.5A current rating for inductor is an over-design for RPi and if you believe that the maximum current wouldn’t touch 2A, buy one with 2.5A rating and if you think it is 1A buy the one with 1.5A rating.</p>
+		<p>Here, 3.5A current rating for inductor is an over-design for RPi and if you believe that the maximum current wouldn't touch 2A, buy one with 2.5A rating and if you think it is 1A buy the one with 1.5A rating.</p>
 		The disadvantages in this case are:
 		<li>Little more effort and time to build one</li>
 		<li>Electromagnetic Interference</li>
