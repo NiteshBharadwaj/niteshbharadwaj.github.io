@@ -50,10 +50,12 @@
 		<p>Codebase: <a href="https://github.com/NiteshBharadwaj/fred-staging/tree/Android-App-Merge"> Fred Extension</a>, <a href="https://github.com/NiteshBharadwaj/plugin-MDNSDiscovery-official/tree/master/src"> MDNS Plugin Extension</a>, <a href="https://github.com/NiteshBharadwaj/Freenet"> Android App</a> </p>
 		<p>More Info: <a href="https://emu.freenetproject.org/pipermail/devl/2013-September/037358.html">Final Report</a>,<a href ="http://en.wikipedia.org/wiki/Freenet">The Freenet Project</a>, Official Freenet IRC channel: #freenet on chat.freenode.net </p>
 		<h1>Robert Bosch Engineering and Business Solutions Ltd.</h1>
-		<p>As mentioned in the homepage, this internship involves building a robot that can avoid obstacle, detect a target and pick it up.</p>
-		<p>A raspberry pi along with a USB Wi-Fi adapter is being used for communication. The user communicates with the server using his android application. This command is sent to the robot through the home internet connection. An alternative has also been implemented which involves attaching a GSM module to pi and receiving SMS based commands.</p>
+		<p>This project involved building a robot that can avoid obstacles, detect a target and pick it up.</p>
+		<p>A raspberry pi along with a USB Wi-Fi adapter is used for communication. The user communicates with the server using his android application. This command is sent to the robot through the home internet connection. An alternative has also been implemented which involves attaching a GSM module to pi and receiving SMS based commands.</p>
 		<p>The raspberry pi then processes this command and activates its camera module (monocular vision - no depth sensor involved). It captures an image and detects the floor right ahead of it by Noise removal followed by Canny followed by heuristics. Subsequently, it detects the object and plans a path towards it by BFS. It then proceeds towards the object before it is interrupted by next iteration.</p>
-      </div>
+		<p>One notable accomplishment through the course of this project is the ability to be able to find distances without using a depth sensor. This was done by taking advantage of the regularity in the size of tiles on the floor. A tile far away from the camera will look substantially smaller than a tile right ahead of robot. But we know all tiles are of same dimensions. This reduction in size of tile gives a sense of depth in a 2D image.</p>		
+		<p>No photos or algorithms can be shared because of the privacy policy :/ </p>
+	  </div>
     </div>
     <div id="footer">
       <p>Copyright &copy; <a href="#" class="nick"> Illusionist</a> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
